@@ -15,9 +15,8 @@ BOOST_AUTO_TEST_CASE(ReadMatrix3x3)
   // Arrange
   MatrixXd expectedMatrix(3, 3);
   expectedMatrix << 0.680375, 0.59688, -0.329554,
-                -0.211234, 0.823295, 0.536459,
-                0.566198, -0.604897, -0.444451;
-
+      -0.211234, 0.823295, 0.536459,
+      0.566198, -0.604897, -0.444451;
   // Act
   auto data = matrixIO::openData("m3_test.csv", 3);
 
